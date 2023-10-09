@@ -22,10 +22,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public EmployeeDto createEmployee(EmployeeDto employeeDto) {
-
         Employee employee = toEmployee(employeeDto);
         return toEmployeeDto(employeeRepository.save(employee));
-
     }
 
     @Override
